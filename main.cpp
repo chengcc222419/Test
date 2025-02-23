@@ -10,8 +10,9 @@ void sort(int arr[], int size)
 	{
 		for(int j = 0; j < size - 1 - i; j ++)
 		{
-			if(arr[j] > arr[j + 1])
+			if(arr[j] < arr[j + 1])
 			{
+				//小王修改排序算法 从大到小排序
 				tmp = arr[j];
 				arr[j] = arr[j + 1];
 				arr[j + 1] = tmp;
